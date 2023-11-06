@@ -2,7 +2,29 @@ body{
     /* background-color: rgb(198, 128, 109); */
     background-image: url("Planets.jpg");
 
+    -webkit-animation: animatedBackground 10s ease-in-out infinite;
+    -moz-animation: animatedBackground 10s ease-in-out infinite;
+    animation: animatedBackground 10s ease-in-out infinite;
+    background-repeat: repeat x;
+    background-position: 0px 0px;
+
 }
+
+  @-webkit-keyframes animatedBackground { /* got it from dylan link he sent me, I just ajust some modification*/
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+   }
+   
+   @-moz-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+   }
+   
+   @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+   }
+
 
 .screen{
     display: flex;
@@ -14,7 +36,7 @@ body{
 header {
     text-align: center;
     margin: 3rem 0px;
-    color: rgba(246, 56, 4, 0.995);
+    color: chartreuse;
     border-color: rgb(26, 238, 238);
     box-shadow: inset;
   }
@@ -111,3 +133,5 @@ header {
 .attackbtn:hover , .Retreatbtn:hover, .Restartbtn:hover{
     box-shadow: 0 17px 50px 0 rgba(250, 245, 245, 0.24) 50px 0 rgba(237, 180, 180, 0.19)
  }
+
+ 
