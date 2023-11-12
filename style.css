@@ -10,7 +10,7 @@ body{
 
 }
 
-  @-webkit-keyframes animatedBackground { /* got it from dylan link he sent me, I just ajust some modification*/
+  @-webkit-keyframes animatedBackground {
     from { background-position: 0 0; }
     to { background-position: 100% 0; }
    }
